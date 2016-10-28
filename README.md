@@ -10,6 +10,7 @@ The following will introduce how to use Android APP to control the LinkNode R4.
 
 #### 1. Install Android APP
 * Download the APK file from the [github](https://github.com/delongqilinksprite/LinkNodeR4-app.git) and install it.
+* if your equipment is iphone/ipad,you can get the app form appstore and name is "LinkNode Relay".  
 
 
 #### 2. Login LinkSpriteIO
