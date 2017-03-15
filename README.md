@@ -46,3 +46,24 @@ The following will introduce how to use Android APP to control the LinkNode R4.
 * control the button on the right side to turn on or off the relays, and you can click the relay's name to change it.
 
 ![](images/5.png)
+
+# How to update LinkNode R4 firmware
+If you wipe the original firmware of LinkNode R4, you now need to restore the previous firmware, then follow the following steps can be restored.
+
+* Download the [LinkNode R4 code](https://github.com/delongqilinksprite/LinkNodeR4-app/tree/master/code)
+* Compile the code,this step can be learn from [LinkNodeD1](http://linksprite.com/wiki/index.php5?title=LinkNode_D1)
+* Upload the code by Arduino IDE
+
+###### Note: Apikey,deviceID and wifi message are written into the flash inside,if you want to erase the apikey and deviceID,you could change the code.but wifi message can't be erased!
+
+![](images/code.png)
+
+* Open the Arduino IDE Serial Monitor,you will see "start to configure..."
+* Use your cell phone scan the qr,get the akikey and deviceID
+* send the deviceID and apikey by Serial Monitor,when you see "Configuration is finished!",that's done
+
+###### Note: Scan QR result is:C1:0080000xxxx,D1:xxxxxxxx-xxxx-xxxx-xxxxxxxxxxxx-xxxxxxxxxxxx,we just send:0080000xxxxxxxxxxxx-xxxx-xxxx-xxxxxxxxxxxx-xxxxxxxxxxxx,no space.
+
+![](images/scan.png)
+
+
